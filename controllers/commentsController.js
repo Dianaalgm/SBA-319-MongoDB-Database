@@ -33,7 +33,7 @@ const updatecomment = async(req,res)=>{
         title:title,
         body:body,
     });
-    //Find to update Note -> retrieve and send it as res
+    //Find to update Comments -> retrieve and send it as res
     const updatedComment = await Comment.findById(commentId);
     res.json({ comment: updatedComment})
 };
@@ -54,5 +54,6 @@ module.exports = {
     fetchOneComment,
     updatecomment,
     deleteComment
-
 };
+
+
