@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000 ;
 const cors = require("cors");
 const connectToDb = require('./config/connectToDb')
-
+const Note = require('./models/note')
 
 //MIDDLEWARE------------
 app.use(express.json())
