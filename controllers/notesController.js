@@ -1,4 +1,4 @@
-const Note = require ("./models/note");
+const Note = require ("../models/note");
 
 //CRUD Code for notes goes here 
 //CREATE---------
@@ -28,14 +28,14 @@ const fetchOneNote = async (req,res)=>{
 //UPDATE---------
 const updateNote = async(req,res)=>{
     const noteId = req.params.id;
-    const{title,body} = req.body;
-    const note = await Note.findByIdAndUpdate(noteId,{
+    const { title,body }  = req.body;
+    await Note.findByIdAndUpdate(noteId,{
         title:title,
         body:body,
     });
     //Find to update Note -> retrieve and send it as res
     const updatedNote = await Note.findById(noteId);
-    res.json({note:updatedNote})
+    res.json({ note: updatedNote})
 };
 
 //DELETE------
