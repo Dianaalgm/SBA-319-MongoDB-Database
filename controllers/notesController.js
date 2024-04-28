@@ -44,7 +44,7 @@ const deleteNote = async(req,res)=>{
     await Note.deleteOne({
         id:noteId
     })
-    res.json({sucss: "Record has deleted successfully"})
+    res.json({success: "Record has deleted successfully"})
 };
 
 //Export functions
@@ -55,3 +55,5 @@ module.exports = {
     updateNote,
     deleteNote
 };
+
+
