@@ -69,7 +69,7 @@ app.delete("/users/:id", usersController.deleteUser);
 
 
 
-
+//SERVER---------------
 app.listen(PORT,()=>{
     console.log(`Express Server listening on PORT num ${PORT}`)
 })

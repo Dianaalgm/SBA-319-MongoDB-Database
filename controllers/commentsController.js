@@ -1,4 +1,4 @@
-const Note = require ("../models/comment");
+const Comment = require ("../models/comment");
 
 //CRUD Code for comments goes here 
 //CREATE---------
