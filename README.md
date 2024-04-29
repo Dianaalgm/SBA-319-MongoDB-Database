@@ -13,7 +13,7 @@ Created a `.env` file in the root directory.
 - cors
 
 File Structure
-- `index.js`: Main entry point of the application.
+- `server.js`: Main entry point of the application.
 - `config/connectToDb.js`: Connects to the MongoDB database.
 - `models/`: Directory containing Mongoose models for notes, comments, and users.
 - `controllers/`: Directory containing route handlers for notes, comments, and users.
